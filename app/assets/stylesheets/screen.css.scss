@@ -1,0 +1,58 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3/text-shadow";
+@import "compass/css3/box-shadow";
+
+$blue: #273856; 
+$red: #E50D19;
+$dark-red: #C90E17;
+
+$default-text-shadow-color: rgba(white, 0.2);
+$default-text-shadow-blur: 0px;
+$default-text-shadow-v-offset: -1px;
+
+body {
+    font-family: "jaf-bernino-sans-comp", Helvetica, Arial, sans-serif;
+    background: $blue;
+    position: relative;
+}
+
+a:link, a:hover, a:visited, a:active {
+    text-decoration:  none;
+    color: white;
+}
+
+.root {
+    margin: auto;
+    width: 960px;
+}
+
+.title {
+    padding-top: 25%;
+    text-align: center;
+    height: 100%;
+    img {
+    }
+    h1 {
+        color: white;
+        font-size: 3em;
+        @include single-text-shadow;
+    }
+}
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    text-align: right;
+    width: 100%;
+    h3 {
+        font-family: 'aviano-flare', Times, serif;
+        font-weight: 700;
+        color: white;
+        font-size: 10px;
+    }
+}
